@@ -24,7 +24,8 @@ try:
     wd.find_element_by_id("SubmitCreds").click()
     wd.find_element_by_xpath(".//*[@id='zz13_RootAspMenu']/li[3]/ul/li[1]/a/span/span").click()
     wd.find_element_by_xpath(".//*[@id='idHomePageNewItem']/span[text()='Создайте элемент']").click()
-    wd.find_element_by_xpath(".//*[@id = 'ctl00_ctl38_g_bc4ebdaa_ce15_490c_a7bc_1b03655f665c_ctl00_DTListFieldIterator1_ReferenceNumberEditContainerBody_ctl00_FormField_ctl00_ctl00_TextField']").click()
+    wd.switch_to.frame(wd.find_element_by_xpath("..//input[contains(@id,'ReferenceNumberEditContainerBody')]").click())
+
 
 finally:
 
