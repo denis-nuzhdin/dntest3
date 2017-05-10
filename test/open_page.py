@@ -22,10 +22,23 @@ try:
     wd.find_element_by_id("password").click()
     wd.find_element_by_id("password").send_keys("PassW0rd")
     wd.find_element_by_id("SubmitCreds").click()
-    wd.find_element_by_xpath(".//*[@id='zz13_RootAspMenu']/li[3]/ul/li[1]/a/span/span").click()
+    wd.find_element_by_xpath(".//li[contains(*,'Журналы регистрации')]//a[contains(span,'Входящие')]").click()
+    #$x(".//li[contains(*,'Журналы регистрации')]//a[contains(span,'Входящие')]")
     wd.find_element_by_xpath(".//*[@id='idHomePageNewItem']/span[text()='Создайте элемент']").click()
-    wd.switch_to.frame(wd.find_element_by_xpath("..//input[contains(@id,'ReferenceNumberEditContainerBody')]").click())
+    #переключение в iframe
+    frame = wd.find_element_by_xpath(".//iframe[contains(@id,'DlgFrame')]")
+    wd.switch_to.frame(frame)
+    #Исходящий номер
+    ReferenceNumber = wd.find_element_by_xpath(".//input[contains(@id,'ReferenceNumberEditContainerBody')]")
+    ReferenceNumber.send_keys("123")
 
+    #поиск инпута по названию поля
+    #$x(".//nobr[contains(.,'Исходящий номер')]//ancestor::tr[1]//input")
+
+
+    #wd.switch_to.frame(wd.find_element_by_xpath(".//input[contains(@id,'ReferenceNumberEditContainerBody')]"))
+    #element = wd.find_element_by_xpath(".//input[contains(@id,'ReferenceNumberEditContainerBody')]").click()
+    #element.send_keys("123")
 
 finally:
 
