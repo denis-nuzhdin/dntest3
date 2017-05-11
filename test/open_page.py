@@ -56,11 +56,19 @@ try:
     Addressee.send_keys("dt-tst-1")
     Addressee.send_keys(Keys.RETURN)
 
-
-
     #Срочно
     Urgently = wd.find_element_by_xpath(".//input[contains(@id,'Urgently')]")
     Urgently.click()
+
+
+    #Сохранить и продолжить
+    #SaveAndKeepEditing = wd.find_element_by_xpath(".//input[contains(@btncommand,'SaveAndKeepEditing')]")
+    #SaveAndKeepEditing.click()
+
+    #Зарегистрировать
+    Regestration = wd.find_element_by_xpath(".//input[contains(@value,'Зарегистрировать')]")
+    Regestration.click()
+
 
 
     #поиск инпута по названию поля
