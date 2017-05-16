@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from selenium.webdriver.firefox.webdriver import WebDriver
 import datetime
+import  random
 from selenium.webdriver.common.keys import Keys
 import unittest
 from selenium.webdriver.common.by import By
@@ -23,6 +24,7 @@ class test_add_element(unittest.TestCase):
     def setUp(self):
         self.wd = WebDriver()
         self.wd.implicitly_wait(10)
+        self.mouse = ActionChains(self.wd)
 
     def delay_dyn(self):
         time.sleep(2)
@@ -66,11 +68,32 @@ class test_add_element(unittest.TestCase):
 
     def fill_form(self, wd):
         #Вид документа
-        DocViewOptions = wd.find_element_by_xpath(".//select[contains(@id,'DocView')]/option[text()='Политика']")
-        DocViewOptions.click()
-        self.delay_dyn()
+        #DocViewOptions = wd.find_element_by_xpath(".//select[contains(@id,'DocView')]/option[text()='Политика']")
+        #DocView = [wd.find_element_by_xpath(".//select[contains(@id,'DocView')]")]
+        DocViewOptions = wd.find_elements_by_xpath(".//select[contains(@id,'DocView')]/option")
+        DocViewOptionsList = []
 
-        #b.find_element_by_xpath("//select[@name='element_name']/option[text()='option_text']").click()
+        for option in DocViewOptions:
+            DocViewOptionsList.append(option.get_attribute("text"))
+
+        for optionValue in DocViewOptionsList:
+            print (optionValue)
+
+        test_option = random.choice(DocViewOptionsList)
+        print (test_option)
+
+        #DocViewOptionsValue = wd.find_element_by_xpath(".//select[contains(@id,'DocView')]/option[text()="+ random 'Политика']")
+
+
+
+
+
+
+
+        #wd.execute_script("return arguments[0].scrollIntoView();", DocViewOptions)
+
+        #DocViewOptions.click()
+        #self.delay_dyn()
 
         # Исходящая дата
         #ReferenceDate = wd.find_element_by_xpath(".//input[contains(@id,'ReferenceDate')]")
@@ -83,10 +106,10 @@ class test_add_element(unittest.TestCase):
         #self.delay_dyn()
 
         # Краткое содержание
-        WebDriverWait(wd, 20).until(
-        EC.element_to_be_clickable((By.XPATH, ".//textarea[contains(@id,'Summary')]")))
-        Summary = wd.find_element_by_xpath(".//textarea[contains(@id,'Summary')]")
-        Summary.send_keys("многострочный текст")
+        #WebDriverWait(wd, 20).until(
+        #EC.element_to_be_clickable((By.XPATH, ".//textarea[contains(@id,'Summary')]")))
+        #Summary = wd.find_element_by_xpath(".//textarea[contains(@id,'Summary')]")
+        #Summary.send_keys("многострочный текст")
 
         # Адресаты
         #Addressee = wd.find_element_by_xpath(".//td/div[contains(@id,'Addressee')]")

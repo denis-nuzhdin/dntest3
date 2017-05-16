@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="564c0c71-c5d8-4cdc-ad34-2ab29f834c58" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test_ord_create.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/open_page.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test_open_page.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test/test_add_element.py" afterPath="$PROJECT_DIR$/test/test_incoming_create.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/folder/dntest1.py" afterPath="$PROJECT_DIR$/folder/dntest1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test.py" afterPath="$PROJECT_DIR$/test/test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_ord_create.py" afterPath="$PROJECT_DIR$/test/test_ord_create.py" />
     </list>
     <ignored path="dntest3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,7 +57,7 @@
       <file leaf-file-name="test_incoming_create.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test_incoming_create.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="855">
               <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
               <folding>
                 <element signature="e#24#82#0" expanded="true" />
@@ -75,9 +69,11 @@
       <file leaf-file-name="test_ord_create.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test_ord_create.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="195">
+              <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+              <folding>
+                <element signature="e#24#82#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -553,34 +549,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_test_add_element_py - 2017.05.16 at 19h 59m 29s.xml">
-      <configuration name="py.test in test_add_element.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_incoming_new_py - 2017.05.16 at 20h 00m 51s.xml">
-      <configuration name="py.test in test_incoming_new.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 20h 07m 00s.xml">
+    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 22h 22m 14s.xml">
       <configuration name="py.test in test_ord_create.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 20h 09m 06s.xml">
+    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 22h 22m 51s.xml">
       <configuration name="py.test in test_ord_create.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 20h 10m 11s.xml">
+    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 22h 34m 45s.xml">
       <configuration name="py.test in test_ord_create.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 20h 29m 09s.xml">
+    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 22h 36m 56s.xml">
       <configuration name="py.test in test_ord_create.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 20h 30m 54s.xml">
+    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 22h 37m 37s.xml">
       <configuration name="py.test in test_ord_create.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 20h 33m 54s.xml">
+    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 22h 38m 31s.xml">
       <configuration name="py.test in test_ord_create.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 20h 35m 06s.xml">
+    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 22h 46m 54s.xml">
       <configuration name="py.test in test_ord_create.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 20h 36m 42s.xml">
+    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 22h 47m 54s.xml">
+      <configuration name="py.test in test_ord_create.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 22h 53m 40s.xml">
+      <configuration name="py.test in test_ord_create.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_ord_create_py - 2017.05.16 at 22h 54m 12s.xml">
       <configuration name="py.test in test_ord_create.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -595,15 +591,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="5" y="30" width="1260" height="686" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24939467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32828283" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45959595" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45959595" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -613,6 +608,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32996634" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -634,6 +630,42 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/test_ord_create.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+          <folding>
+            <element signature="e#24#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding>
+            <element signature="e#24#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/folder/dntest1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="43" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/folder/dntest2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -823,7 +855,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_incoming_create.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="855">
           <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
           <folding>
             <element signature="e#24#82#0" expanded="true" />
@@ -859,9 +891,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_ord_create.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="195">
+          <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+          <folding>
+            <element signature="e#24#82#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
