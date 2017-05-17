@@ -81,9 +81,6 @@ class test_add_element(unittest.TestCase):
         #---------------
 
 
-
-
-
     def open_form_new(self, wd):
         wd.find_element_by_xpath(".//*[@id='idHomePageNewItem']/span[text()='Создайте элемент']").click()
 

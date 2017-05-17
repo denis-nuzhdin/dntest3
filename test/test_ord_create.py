@@ -72,15 +72,52 @@ class test_add_element(unittest.TestCase):
         #DocView = [wd.find_element_by_xpath(".//select[contains(@id,'DocView')]")]
         DocViewOptions = wd.find_elements_by_xpath(".//select[contains(@id,'DocView')]/option")
         DocViewOptionsList = []
-
         for option in DocViewOptions:
             DocViewOptionsList.append(option.get_attribute("text"))
 
-        for optionValue in DocViewOptionsList:
-            print (optionValue)
+        #for optionValue in DocViewOptionsList:
+        #    print (optionValue)
 
-        test_option = random.choice(DocViewOptionsList)
-        print (test_option)
+        #DocViewOptionsRandomValue = random.choice(DocViewOptionsList)
+        #print (DocViewOptionsRandomValue)
+        #wd.find_element_by_xpath(".//select[contains(@id,'DocView')]/option[text()='"+DocViewOptionsRandomValue+"']").click()
+
+        # -------------
+        loops = 10  # число переоткрытий страниц
+        wd = self.wd
+        total = 0
+        # в случае, если сайт работает с куками, их нужно проставить,
+        # напр., так:
+        # self.driver.execute_script( "document.cookie='name=value'" )
+        # есть еще идеологически правильный способ, но он у меня не срабатывал:
+        # self.driver.add_cookie({'name':'value'})
+        ListStext = []
+        for j in range(loops):
+            DocViewOptionsRandomValue = random.choice(DocViewOptionsList)
+            print(DocViewOptionsRandomValue)
+
+            WebDriverWait(wd, 20).until(
+            EC.element_to_be_clickable((By.XPATH, ".//select[contains(@id,'DocView')]")))
+            wd.find_element_by_xpath(
+                ".//select[contains(@id,'DocView')]/option[text()='" + DocViewOptionsRandomValue + "']").click()
+        # time.sleep(3) # ждем 3 сек загрузку страницы, раскомментировать для Chrome!
+        # получаем число миллисекунд для браузерного события onload
+            stext = self.wd.execute_script(
+                "return ( window.performance.timing.domComplete - window.performance.timing.responseStart )")
+
+        for st in DocViewOptions:
+            DocViewOptionsList.append(option.get_attribute("text"))
+
+            total = total + int(stext)
+            total2 = total + j
+            print(stext)
+        print(total)
+        print(total2)
+        print(total / loops)
+        print(total2 / loops)
+
+
+
 
         #DocViewOptionsValue = wd.find_element_by_xpath(".//select[contains(@id,'DocView')]/option[text()="+ random 'Политика']")
 
