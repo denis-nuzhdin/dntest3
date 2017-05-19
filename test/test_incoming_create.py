@@ -10,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 #from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.action_chains import ActionChains
 import time
-
+driver = webdriver.Chrome('/usr/local/bin/chromedriver')
 
 #wd = WebDriver()
 main_page = "http://demo07.i-sys.ru:3003/"
