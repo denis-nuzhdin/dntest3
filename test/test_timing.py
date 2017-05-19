@@ -14,10 +14,10 @@ import time
 
 
 #wd = WebDriver()
-#main_page = "http://demo07.i-sys.ru:3003/"
-main_page = "https://testdf.uclholding.com:4433"
-username = "tam\sp-admin"
-password = "SPadmin649+"
+main_page = "http://demo07.i-sys.ru:3003/"
+#main_page = "https://test.uclholding.com:4433/Lists/ListOutcoming/AllItems.aspx"
+username = "i-sys\dt-tst-1"
+password = "PassW0rd"
 
 
 curent_date = datetime.datetime.now().strftime("%d.%m.%Y")
@@ -42,16 +42,8 @@ class test_add_element(unittest.TestCase):
         wd.find_element_by_id("password").send_keys(password)
         wd.find_element_by_id("SubmitCreds").click()
 
-        #Вид документа
-        #DocViewOptions = wd.find_element_by_xpath(".//select[contains(@id,'DocView')]/option[text()='Политика']")
-        #DocView = [wd.find_element_by_xpath(".//select[contains(@id,'DocView')]")]
-        DocViewOptions = wd.find_elements_by_xpath(".//select[contains(@id,'DocView')]/option")
-        DocViewOptionsList = []
-        for option in DocViewOptions:
-            DocViewOptionsList.append(option.get_attribute("text"))
-
        # -------------
-        loops = 10  # число переоткрытий страниц
+        loops = 5  # число переоткрытий страниц
         wd = self.wd
         total = 0
         # в случае, если сайт работает с куками, их нужно проставить,

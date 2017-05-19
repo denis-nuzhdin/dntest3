@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="564c0c71-c5d8-4cdc-ad34-2ab29f834c58" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/cross_browser.py" afterPath="$PROJECT_DIR$/test/cross_browser.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_incoming_create.py" afterPath="$PROJECT_DIR$/test/test_incoming_create.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_ord_create.py" afterPath="$PROJECT_DIR$/test/test_ord_create.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_timing.py" afterPath="$PROJECT_DIR$/test/test_timing.py" />
     </list>
     <ignored path="dntest3.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_ord_create.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_ord_create.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test_ord_create.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+            <state relative-caret-position="-1170">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
                 <element signature="e#84#114#0" expanded="true" />
               </folding>
@@ -91,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_timing.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test_timing.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test_timing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-240">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-345">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,6 +163,7 @@
         <option value="$PROJECT_DIR$/test/cross_browser.py" />
         <option value="$PROJECT_DIR$/test/test_incoming_create.py" />
         <option value="$PROJECT_DIR$/test/test_ord_create.py" />
+        <option value="$PROJECT_DIR$/test/test_timing.py" />
       </list>
     </option>
   </component>
@@ -274,7 +273,7 @@
       <recent name="$PROJECT_DIR$/fixture" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.py.test in test_ord_create.py">
+  <component name="RunManager" selected="Python tests.py.test in test_timing.py">
     <configuration default="false" name="py.test in test_ord_create.py" type="tests" factoryName="py.test" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -297,23 +296,6 @@
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
       <option name="USE_KEYWORD" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="test_run" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dntest3" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test_run.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
     <configuration default="false" name="py.test in test_incoming_create.py" type="tests" factoryName="py.test" temporary="true">
@@ -382,6 +364,30 @@
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="testToRun" value="$PROJECT_DIR$/test/cross_browser.py" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="py.test in test_timing.py" type="tests" factoryName="py.test" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="dntest3" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="$PROJECT_DIR$/test/test_timing.py" />
       <option name="keywords" value="" />
       <option name="params" value="" />
       <option name="USE_PARAM" value="false" />
@@ -542,18 +548,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.open_page" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_ord_create.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python.test_run" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test_incoming_create.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test" />
-      <item index="5" class="java.lang.String" itemvalue="Python tests.py.test in cross_browser.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_incoming_create.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in cross_browser.py" />
+      <item index="5" class="java.lang.String" itemvalue="Python tests.py.test in test_timing.py" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_ord_create.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_incoming_create.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in cross_browser.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in test" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test_run" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in test_timing.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test in test_ord_create.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test in test_incoming_create.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test in cross_browser.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test in test" />
       </list>
     </recent_temporary>
   </component>
@@ -574,35 +580,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_cross_browser_py - 2017.05.19 at 20h 41m 41s.xml">
-      <configuration name="py.test in cross_browser.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_cross_browser_py - 2017.05.19 at 20h 42m 22s.xml">
-      <configuration name="py.test in cross_browser.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_cross_browser_py - 2017.05.19 at 20h 42m 52s.xml">
-      <configuration name="py.test in cross_browser.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_cross_browser_py - 2017.05.19 at 20h 43m 20s.xml">
-      <configuration name="py.test in cross_browser.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_cross_browser_py - 2017.05.19 at 20h 44m 30s.xml">
-      <configuration name="py.test in cross_browser.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_cross_browser_py - 2017.05.19 at 20h 57m 27s.xml">
-      <configuration name="py.test in cross_browser.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_cross_browser_py - 2017.05.19 at 20h 57m 52s.xml">
-      <configuration name="py.test in cross_browser.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_incoming_create_py - 2017.05.19 at 20h 43m 35s.xml">
-      <configuration name="py.test in test_incoming_create.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_in_test_incoming_create_py - 2017.05.19 at 21h 00m 14s.xml">
       <configuration name="py.test in test_incoming_create.py" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_test_ord_create_py - 2017.05.19 at 21h 01m 49s.xml">
       <configuration name="py.test in test_ord_create.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_timing_py - 2017.05.19 at 21h 04m 52s.xml">
+      <configuration name="py.test in test_timing.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_timing_py - 2017.05.19 at 21h 07m 31s.xml">
+      <configuration name="py.test in test_timing.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_timing_py - 2017.05.19 at 21h 29m 40s.xml">
+      <configuration name="py.test in test_timing.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_timing_py - 2017.05.19 at 21h 32m 33s.xml">
+      <configuration name="py.test in test_timing.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_timing_py - 2017.05.19 at 21h 33m 27s.xml">
+      <configuration name="py.test in test_timing.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_timing_py - 2017.05.19 at 21h 34m 03s.xml">
+      <configuration name="py.test in test_timing.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_timing_py - 2017.05.19 at 21h 35m 34s.xml">
+      <configuration name="py.test in test_timing.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_test_timing_py - 2017.05.19 at 21h 42m 29s.xml">
+      <configuration name="py.test in test_timing.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -875,14 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_timing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -921,11 +919,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/test_ord_create.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        <state relative-caret-position="-1170">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#84#114#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_timing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-345">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
