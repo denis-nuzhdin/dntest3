@@ -4,13 +4,13 @@ import unittest
 from selenium import webdriver
 
 
-#wd = webdriver.Chrome('/usr/local/bin/chromedriver')
-wd = webdriver.Firefox()
+wd = webdriver.Chrome('/usr/local/bin/chromedriver')
+#wd = webdriver.Firefox()
 
 main_page = "http://google.com"
 
 class test_add_element(unittest.TestCase):
-    def tsetUp(self):
+    def setUp(self):
         self.wd = wd
         self.wd.implicitly_wait(10)
 

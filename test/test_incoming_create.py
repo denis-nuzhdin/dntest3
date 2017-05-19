@@ -1,27 +1,28 @@
 # -*- coding: utf-8 -*-
-from selenium.webdriver.firefox.webdriver import WebDriver
+#from selenium.webdriver.firefox.webdriver import WebDriver
+from selenium import webdriver
 import datetime
 from selenium.webdriver.common.keys import Keys
 import unittest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
-#from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.action_chains import ActionChains
 import time
-driver = webdriver.Chrome('/usr/local/bin/chromedriver')
 
-#wd = WebDriver()
+
 main_page = "http://demo07.i-sys.ru:3003/"
 username = "i-sys\dt-tst-1"
 password = "PassW0rd"
 curent_date = datetime.datetime.now().strftime("%d.%m.%Y")
 delay_dynamic = time.sleep(2)
+wd = webdriver.Chrome('/usr/local/bin/chromedriver')
+#wd = webdriver.Firefox()
+
 
 class test_add_element(unittest.TestCase):
     def setUp(self):
-        self.wd = WebDriver()
+        self.wd = wd
         self.wd.implicitly_wait(10)
 
     def delay_dyn(self):
