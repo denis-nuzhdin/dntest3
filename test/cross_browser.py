@@ -4,8 +4,9 @@ import unittest
 from selenium import webdriver
 
 
-wd = webdriver.Chrome('/usr/local/bin/chromedriver')
+#wd = webdriver.Chrome('/usr/local/bin/chromedriver')
 #wd = webdriver.Firefox()
+wd = webdriver.Ie('C:\Python35-32\IEDriverServer.exe')
 
 main_page = "http://google.com"
 

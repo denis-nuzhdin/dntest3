@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-from selenium.webdriver.firefox.webdriver import WebDriver
+#from selenium.webdriver.firefox.webdriver import WebDriver
+from selenium import webdriver
 import datetime
 import  random
 from selenium.webdriver.common.keys import Keys
@@ -13,20 +14,22 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 
 
+
 #wd = WebDriver()
 main_page = "http://demo07.i-sys.ru:3003/"
 #main_page = "https://test.uclholding.com:4433/Lists/ListOutcoming/AllItems.aspx"
 username = "i-sys\dt-tst-1"
 password = "PassW0rd"
-
+#wd = webdriver.Ie('C:\Python35-32\IEDriverServer.exe')
+wd = webdriver.Firefox()
 
 curent_date = datetime.datetime.now().strftime("%d.%m.%Y")
 delay_dynamic = time.sleep(2)
 
 class test_add_element(unittest.TestCase):
     def setUp(self):
-        self.wd = WebDriver()
-        self.wd.implicitly_wait(10)
+        self.wd = wd
+        self.wd.implicitly_wait(1)
         self.mouse = ActionChains(self.wd)
 
     def test_open_create_element(self):
@@ -43,7 +46,7 @@ class test_add_element(unittest.TestCase):
         wd.find_element_by_id("SubmitCreds").click()
 
        # -------------
-        loops = 5  # число переоткрытий страниц
+        loops = 8  # число переоткрытий страниц
         wd = self.wd
         total = 0
         # в случае, если сайт работает с куками, их нужно проставить,
