@@ -10,6 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 # from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.action_chains import ActionChains
+
 import time
 
 # wd = WebDriver()
@@ -42,20 +43,26 @@ class test_add_element(unittest.TestCase):
         summ_list = []
 
         for url in pages:
-            for uu in range(sum):
-                for u in range(loops):
-                    self.wd.get(url)
+            for u in range(loops):
+                self.wd.get(url)
                 # time.sleep(3) # ждем 3 сек загрузку страницы, раскомментировать для Chrome!
                 # получаем число миллисекунд для браузерного события onload
-                    stext = self.wd.execute_script(
-                        "return ( window.performance.timing.domComplete - window.performance.timing.responseStart )")
-
-                    print ("url: " + url)
-                    print(stext)
+                stext = self.wd.execute_script(
+                    "return ( window.performance.timing.domComplete - window.performance.timing.responseStart )")
                 summ_list.append(stext)
+                print ("url: " + url)
+                print(stext)
                 print(summ_list)
-            total = total + int(stext)
-            print(total)
+
+            sum_all = sum(summ_list)
+            #average = sum_all / loops
+            #print(average)
+            print(sum_all)
+            summ_list.clear()
+
+
+            #total = total + int(stext)
+            #print(total)
 
 
 
