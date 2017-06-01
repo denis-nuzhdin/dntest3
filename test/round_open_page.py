@@ -37,7 +37,6 @@ class test_add_element(unittest.TestCase):
 
         # -------------
         loops = 2  # число переоткрытий страниц
-        sum = 1
         wd = self.wd
         total = 0
         summ_list = []
@@ -53,11 +52,12 @@ class test_add_element(unittest.TestCase):
                 print ("url: " + url)
                 print(stext)
                 print(summ_list)
-
-            sum_all = sum(summ_list)
+            summ_list_int = list(map(int, summ_list))
+            sum_all = sum(summ_list_int)
             #average = sum_all / loops
             #print(average)
             print(sum_all)
+            print(sum_all / loops)
             summ_list.clear()
 
 
@@ -67,16 +67,5 @@ class test_add_element(unittest.TestCase):
 
 
 
-        #for j in range(loops):
-        #    self.wd.get(main_page)
-        #    # time.sleep(3) # ждем 3 сек загрузку страницы, раскомментировать для Chrome!
-        #    # получаем число миллисекунд для браузерного события onload
-        #    stext = self.wd.execute_script(
-        #        "return ( window.performance.timing.domComplete - window.performance.timing.responseStart )")
-
-        #   total = total + int(stext)
-        #    print(stext)
-        #print(total)
-        #print(total / loops)
 
 
