@@ -10,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 # from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.action_chains import ActionChains
-
+import openpyxl
 import time
 
 # wd = WebDriver()
@@ -35,11 +35,16 @@ class test_add_element(unittest.TestCase):
     def open_main_page(self, wd):
         wd.get(main_page)
 
+        wb = openpyxl.load_workbook("test.xlsx")
+        ws = wb.active
+        curent_time = datetime.datetime.now().strftime("%d.%m.%Y %H:%M")
+
         # -------------
         loops = 2  # число переоткрытий страниц
         wd = self.wd
         total = 0
         summ_list = []
+        agg_list = []
 
         for url in pages:
             for u in range(loops):
@@ -54,11 +59,15 @@ class test_add_element(unittest.TestCase):
                 print(summ_list)
             summ_list_int = list(map(int, summ_list))
             sum_all = sum(summ_list_int)
-            #average = sum_all / loops
+            average = sum_all / loops
             #print(average)
             print(sum_all)
             print(sum_all / loops)
+            agg_list.append(average)
             summ_list.clear()
+            print(agg_list)
+            ws.append([curent_time] + [url] + [average])
+            wb.save("test.xlsx")
 
 
             #total = total + int(stext)
