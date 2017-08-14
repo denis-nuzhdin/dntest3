@@ -35,7 +35,7 @@ class test_add_element(unittest.TestCase):
     def open_main_page(self, wd):
         wd.get(main_page)
 
-        wb = openpyxl.load_workbook("test.xlsx")
+        wb = openpyxl.load_workbook("/kashmir/lesson/git/dntest3/test/test.xlsx")
         ws = wb.active
         curent_time = datetime.datetime.now().strftime("%d.%m.%Y %H:%M")
 
@@ -67,7 +67,7 @@ class test_add_element(unittest.TestCase):
             summ_list.clear()
             print(agg_list)
             ws.append([curent_time] + [url] + [average])
-            wb.save("test.xlsx")
+            wb.save("/kashmir/lesson/git/dntest3/test/test.xlsx")
 
 
             #total = total + int(stext)
