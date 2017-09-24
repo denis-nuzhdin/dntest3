@@ -8,7 +8,7 @@ NUMBER = 1
 
 
 #guess = int(input("num: "))
-tires = 1
+
 
 
 def ask_number(question):
@@ -18,27 +18,34 @@ def ask_number(question):
         responce = int(input(question))
     return responce
 
-guess = ask_number("Выбери число: ")
+def main():
+    tires = 1
+    guess = ask_number("Выбери число: ")
 
+    NUMBER_MIN = 1
+    NUMBER_MAX = 100
+    NUMBER = 1
 
-while NUMBER!= guess:
-    if NUMBER > guess:
-        print("less")
-        NUMBER_MAX=NUMBER
-    else:
-        print("more")
-        NUMBER_MIN=NUMBER
-    NUMBER = int(random.randint(NUMBER_MIN, NUMBER_MAX))
+    while NUMBER!= guess:
+        if NUMBER > guess:
+            print("less")
+            NUMBER_MAX=NUMBER
+        else:
+            print("more")
+            NUMBER_MIN=NUMBER
+        NUMBER = int(random.randint(NUMBER_MIN, NUMBER_MAX))
 
-    #guess = int(input("try again: "))
-    tires += 1
-    print(NUMBER)
+        #guess = int(input("try again: "))
+        tires += 1
+        print(NUMBER)
 
-    if NUMBER!=guess and tires >=5:
-        print("looser")
-        break
-    elif NUMBER!=guess and tires<5:
-        print("next numb")
+        if NUMBER!=guess and tires >=5:
+            print("looser")
+            break
+        elif NUMBER!=guess and tires<5:
+            print("next numb")
 
-    else:
-        print("winner")
+        else:
+            print("winner")
+
+main()

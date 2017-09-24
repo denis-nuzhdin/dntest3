@@ -1,0 +1,2 @@
+alice	7
+denis	2

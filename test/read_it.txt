@@ -1,0 +1,10 @@
+You use JMeter and want to test an application that massively uses JSON data as exchange format.
+
+JSON has become a de-facto standard nowadays and is used often:
+
+To return data through Ajax Calls within dynamic websites
+To return data through HTTP calls for Mobile Applications
+As a REST webservice exchange format
+As a storage format for NO-SQL databases like MongoDB
+Of course you can still extract content with core JMeter using Regular Expression Extractor but this
+becomes quite tedious, inefficient if not impossible when you have a lot of JSON elements with same attribute names.
